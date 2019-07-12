@@ -1,0 +1,31 @@
+//Writing a code for 
+     *
+    **
+   ***
+  ****
+ *****
+ 
+ package app4;
+
+import java.util.Scanner;
+
+public class TRIANGLE#4 {
+    
+    public static void main(String[] args) {
+        System.out.println("Enter_");
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        
+        for (int i = 1; i <= n; i++) {
+            for (int j = 5; j >= (i); j--) {
+                System.out.print(" ");
+            }
+            for (int j = 5; j > (n - i); j--) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+        
+    }
+   
+}
