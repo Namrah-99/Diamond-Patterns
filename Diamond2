@@ -1,0 +1,88 @@
+//Code for 
+*****__**********__*****
+****____********____****
+***______******______***
+**________****________**
+*__________**__________*
+*__________**__________*
+**________****________**
+***______******______***
+****____********____****
+*****__**********__*****
+
+package app6;
+
+import java.util.Scanner;
+
+public class Diamond2 {
+    
+    public static void main(String[] args) {
+        System.out.println("Enter ");
+        Scanner input = new Scanner(System.in);
+        int m = input.nextInt();
+        
+        for (int i = 1; i <= m; i++) {
+           
+            for (int j = m; j >= i; j--) {
+                System.out.print("*");
+            }
+
+            for (int j = m; j > (m - i); j--) {
+                System.out.print("_");
+            }
+            for (int j = m; j > (m - i); j--) {
+                System.out.print("_");
+            }
+
+            for (int j = m; j >= i; j--) {
+                System.out.print("*");
+            }
+            
+            for (int j = m; j >= i; j--) {
+                System.out.print("*");
+            }
+
+            for (int j = m; j > (m - i); j--) {
+                System.out.print("_");
+            }
+            for (int j = m; j > (m - i); j--) {
+                System.out.print("_");
+            }
+
+            for (int j = m; j >= i; j--) {
+                System.out.print("*");
+            }
+
+            System.out.println(""); 
+        }
+         for (int i = 1; i <= m; i++) {
+             for (int j = m; j > (m - i); j--) {
+                System.out.print("*");
+            }
+             for (int j = m; j >= i; j--) {
+                System.out.print("_");
+            }
+             for (int j = m; j >= i; j--) {
+                System.out.print("_");
+            }
+             for (int j = m; j > (m - i); j--) {
+                System.out.print("*");
+            }
+              for (int j = m; j > (m - i); j--) {
+                System.out.print("*");
+            }
+             for (int j = m; j >= i; j--) {
+                System.out.print("_");
+            }
+             for (int j = m; j >= i; j--) {
+                System.out.print("_");
+            }
+             for (int j = m; j > (m - i); j--) {
+                System.out.print("*");
+            }
+             System.out.println("");
+         }
+    }
+   
+}
+
