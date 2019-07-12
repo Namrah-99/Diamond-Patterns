@@ -1,0 +1,52 @@
+//Code for Diamond Pattern
+     __
+    ____
+   ______
+  ________
+ __________
+ __________
+  ________
+   ______
+    ____
+     __
+     
+     package app5;
+
+import java.util.Scanner;
+
+public class Diamond1 {
+    
+    public static void main(String[] args) {
+        System.out.println("Enter");
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+         for (int i = 1; i <= n; i++) {
+           
+            for (int j = n; j >= i; j--) {
+                System.out.print(" ");
+            }
+
+            for (int j = n; j > (n - i); j--) {
+                System.out.print("_");
+            }
+            for (int j = n; j > (n - i); j--) {
+                System.out.print("_");
+            }
+            System.out.println(""); 
+        }
+         for (int i = 1; i <= n; i++) {
+             for (int j = n; j > (n - i); j--) {
+                System.out.print(" ");
+            }
+             for (int j = n; j >= (i); j--) {
+                System.out.print("_");
+            }
+             for (int j = n; j >= (i); j--) {
+                System.out.print("_");
+            }            
+             System.out.println("");
+         }
+        
+    }
+   
+}
