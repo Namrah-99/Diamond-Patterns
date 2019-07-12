@@ -17,10 +17,10 @@ public class TRIANGLE#4 {
         int n = input.nextInt();
         
         for (int i = 1; i <= n; i++) {
-            for (int j = 5; j >= (i); j--) {
+            for (int j = n; j >= i; j--) {
                 System.out.print(" ");
             }
-            for (int j = 5; j > (n - i); j--) {
+            for (int j = n; j > (n - i); j--) {
                 System.out.print("*");
             }
             System.out.println("");
